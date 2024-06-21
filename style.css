@@ -20,6 +20,8 @@ body {
     margin: auto;
     padding: 20px;
     border-radius: 10px; /* Optional: for rounded corners */
+    color: white;
+    text-align: center;
 }
 
 .search {
@@ -55,4 +57,49 @@ body {
 
 .search button:hover {
     background-color: #5b548a;
+}
+
+.weather {
+    margin-top: 20px;
+}
+
+.weather-icon {
+    width: 100px;
+    height: 100px;
+}
+
+.temp {
+    font-size: 48px;
+    margin: 10px 0;
+}
+
+.city {
+    font-size: 24px;
+    margin: 5px 0;
+}
+
+.details {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.col {
+    display: flex;
+    align-items: center;
+}
+
+.col img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.col p {
+    margin: 0;
+}
+
+.humidity, .wind {
+    font-size: 18px;
+    font-weight: bold;
 }
