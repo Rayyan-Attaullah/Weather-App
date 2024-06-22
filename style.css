@@ -11,6 +11,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    overflow: hidden;
 }
 
 .container {
@@ -19,9 +20,11 @@ body {
     background: linear-gradient(135deg, #00feba, #5b548a);
     margin: auto;
     padding: 20px;
-    border-radius: 10px; /* Optional: for rounded corners */
+    border-radius: 10px;
     color: white;
     text-align: center;
+    opacity: 0;
+    transform: translateY(50px);
 }
 
 .search {
@@ -61,6 +64,7 @@ body {
 
 .weather {
     margin-top: 20px;
+    opacity: 0;
 }
 
 .weather-icon {
@@ -104,11 +108,9 @@ body {
     font-weight: bold;
 }
 
-.weather{
+.weather {
     display: none;
 }
-
-
 
 .error {
     display: none; 

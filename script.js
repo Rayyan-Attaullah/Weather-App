@@ -1,4 +1,7 @@
-const apiKey = "3d2cfb68be76e4164eb25df618cbf065";
+// Load environment variables from .env file
+require('dotenv').config();
+
+const apiKey = process.env.OPENWEATHERMAP_API_KEY;
 const apiUrl = "https://api.openweathermap.org/data/2.5/weather?units=metric&q=";
 const searchBox = document.querySelector(".search input");
 const searchBtn = document.querySelector(".search button");
@@ -32,6 +35,8 @@ async function checkWeather(city) {
 
         document.querySelector(".error").style.display = "none";
         document.querySelector(".weather").style.display = "block";
+
+        gsap.fromTo(".weather", { opacity: 0 }, { opacity: 1, duration: 1, ease: "power2.out" });
     }
 }
 
