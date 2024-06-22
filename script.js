@@ -1,11 +1,12 @@
-// Load environment variables from .env file
-require('dotenv').config();
-
-const apiKey = process.env.OPENWEATHERMAP_API_KEY;
+const apiKey = "3d2cfb68be76e4164eb25df618cbf065";
 const apiUrl = "https://api.openweathermap.org/data/2.5/weather?units=metric&q=";
 const searchBox = document.querySelector(".search input");
 const searchBtn = document.querySelector(".search button");
 const weatherIcon = document.querySelector(".weather-icon");
+
+document.addEventListener("DOMContentLoaded", () => {
+    gsap.to(".container", { opacity: 1, y: 0, duration: 1, ease: "power2.out" });
+});
 
 async function checkWeather(city) {
     const response = await fetch(`${apiUrl}${city}&appid=${apiKey}`);
