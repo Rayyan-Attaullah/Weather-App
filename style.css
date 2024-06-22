@@ -103,3 +103,19 @@ body {
     font-size: 18px;
     font-weight: bold;
 }
+
+.weather{
+    display: none;
+}
+
+
+
+.error {
+    display: none; 
+    color: #ff4d4d; 
+    background-color: #fff; 
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 5px;
+    font-size: 18px;
+}
